@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+require 'regexp-match-polyfill'
 require_relative "tiktoken_ruby/version"
 require_relative "tiktoken_ruby/encoding"
 

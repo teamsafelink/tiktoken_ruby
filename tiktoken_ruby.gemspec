@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
 
   spec.homepage = "https://github.com/IAPark/tiktoken_ruby"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.7.0"
-  spec.required_rubygems_version = ">= 3.1.0"
+  spec.required_ruby_version = ">= 2.3.8"
+  spec.required_rubygems_version = ">= 2.5.2.3"
   spec.platform = Gem::Platform::RUBY
 
   spec.metadata["homepage_uri"] = spec.homepage
@@ -36,9 +36,5 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
   spec.extensions = ["ext/tiktoken_ruby/extconf.rb"]
-
-  spec.add_dependency "rb_sys", "~> 0.9.68"
-
-  # For more information and examples about making a new gem, check out our
-  # guide at: https://bundler.io/guides/creating_gem.html
+  spec.add_dependency 'regexp-match-polyfill', '~> 1.0', '>= 1.0.2'
 end

@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+require 'regexp-match-polyfill'
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
 require "standard/rake"

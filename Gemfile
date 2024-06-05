@@ -11,6 +11,8 @@ gem "rake-compiler"
 
 gem "rspec", "~> 3.0"
 
-gem "standard", "~> 1.3"
+gem "standard"
 
 gem "yard-doctest", "~> 0.1.17"
+
+gem "rb_sys", git: "https://github.com/wlalang003/rb-sys.git", ref: '8e855d62ab06d0fda52f4cdff7a9b1cc15525d18'
